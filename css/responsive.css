@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @media screen and (max-width:1024px) {
     .inner{
         max-width: 760px;
@@ -63,16 +64,31 @@
         margin-top: 10px;
     }
     .swiper-pagination-bullet{
+
         border-radius: 0;
-        background-color: pink;
+        background-color: blue;
     }
     .swiper-pagination-bullet-active{
         width: 20px;
         background-color: red;
     }
 }
-@media screen and (max-width:480px) {
+
+@media screen and (max-width:480px){
 .promotion .inner{
-    width: 80%;
+    width:80%;
+}
+.search{
+    width: 400px;
+    padding: 0;
+}
+.header-down{
+    display: none;
+}
+.header .inner{
+    height: 150px;
+}
+.books-img{
+    height: 200px;
 }
 }

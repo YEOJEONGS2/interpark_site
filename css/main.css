@@ -4,6 +4,11 @@
 @import url("header.css");
 @import url("promotion.css");
 @import url("shopping.css");
+@import url("tour.css");
+@import url("ticket.css");
+@import url("live.css");
+@import url("books.css");
+@import url("event.css");
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +16,8 @@
   list-style: none;
 }
 a {
-  text-decoration: none;
   color: #333;
+  text-decoration: none;
 }
 img {
   vertical-align: middle;
@@ -30,10 +35,10 @@ body {
   margin: 0 auto;
 }
 /* section 공동클래스*/
-.wrap > section{
+.wrap > section {
   padding: 30px 0 90px 0;
 }
-.section-top{
+.section-top {
   text-align: center;
 }
 .section-top > h2 {
@@ -48,10 +53,10 @@ body {
   color: rgba(0, 0, 0, 0.5);
 }
 /* 섹션안에 있는 버튼들 */
-.section-top .btns{
+.section-top .btns {
   margin: 25px 0;
 }
-.section-top .btns a{
+.section-top .btns a {
   display: inline-block;
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -59,18 +64,21 @@ body {
   line-height: 42px;
   font-size: 14px;
   color: #111;
-  background: #fff;
+  background-color: #fff;
   margin-right: 6px;
 }
-.btns-active{
+.btns-active {
   background-color: #111 !important;
   color: #fff !important;
 }
+.section-slide{
+  margin-bottom: 20px;
+}
 /* 섹션 하단의 링크버튼 */
-.section-bottom{
+.section-bottom {
   text-align: center;
 }
-.bt-link-shop{
+.bt-link-shop {
   display: inline-block;
   font-size: 16px;
   line-height: 56px;
@@ -81,16 +89,16 @@ body {
   font-weight: 700;
   margin-top: 20px;
 }
-.bt-link-shop::after{
-  content:"";
-  background: url("../images/icon_linkArrow.svg")no-repeat center;
+.bt-link-shop::after {
+  content: "";
+  background: url("../images/icon_linkArrow.svg") no-repeat center;
   width: 17px;
   height: 11px;
   position: relative;
-  display:inline-block;
+  display: inline-block;
 }
 /* 스와이퍼 네비게이션 버튼 */
-.sw-bt{
+.sw-bt {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -100,34 +108,32 @@ body {
   font-size: 0;
   cursor: pointer;
 }
-.sw-bt::before{
+.sw-bt::before {
   content: "";
   width: 8px;
   height: 16px;
   display: block;
   position: absolute;
-  top:calc(50% - 8px);
+  top: calc(50% - 8px);
   left: calc(50% - 4px);
-  background: url("../images/slider_arrow.svg")no-repeat center;
+  background: url("../images/slider_arrow.svg") no-repeat center;
 }
-.sw-prev::before{
+.sw-prev::before {
   transform: scaleX(-100%);
 }
-.sw-prev{
-position: absolute;
-top:50%;
-left:0;
-z-index: 99;
-transform: translate(-50%,-50%);
-}
-.sw-next{
+.sw-prev {
   position: absolute;
-  top:50%;
-  right: 0;
-  transform: translate(50%,-50%);
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
   z-index: 99;
 }
-
+.sw-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+  z-index: 99;
+}
 /* 플라잉배너 */
 /* 퀵메뉴 */
-

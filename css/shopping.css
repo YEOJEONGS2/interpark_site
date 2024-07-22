@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* 쇼핑추천 */
-.sw-shopping {
-}
+
 .good {
   display: block;
   width: 100%;
@@ -32,6 +31,7 @@
   color: #ef3e43;
 }
 .good-info-list li p {
+ 
   font-size: 15px;
   line-height: 18px;
   margin-top: 10px;
